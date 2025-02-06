@@ -72,6 +72,10 @@ Sección de opiniones de clientes sobre la calidad del servicio.
 - Registro: Formulario para crear una nueva cuenta con nombre, correo y contraseña. Incluye validaciones básicas.
 - Recuperación de Contraseña: Envía un enlace de recuperación al correo ingresado si está registrado. Muestra mensajes claros en caso de éxito o error.
 - Habrá dos servicios,en los que en uno consumirán todos los componentes de lo que es la página principal y la pestaña de reservas y el otro servicio lo consumirán los componentes de registrar usuarios,iniciar sesión y recuperar contraseña.En este caso consume de AuthServer
+- También he implementado "textarea" para que el usuario pueda rellenar los campos de reserva
+- También la implementación de "Material" de angular para los recordatorios de reserva cada 30 segundos ha sido muy importante
+- También destacar el uso de EventEmitter para cerrar la encuesta una vez respondida y enviada
+- He hecho un contador para el ranking de cortes de pelo para que el usuario pueda elegir que corte de pelo votar y un sort,para cuando el número de votos de un corte de pelo sea mayor a otro,se ordene de forma descendente,el usuario podrá ver que corte de pelo son los más votados
  
 
 ## Pruebas de la resolución del problema
@@ -80,31 +84,23 @@ Seleccionar una fecha y hora de reserva.
 Verificar que el sistema muestra la disponibilidad adecuada y permite la confirmación.
 
 
- ![gif](./recursos/Prueba_Login.gif)
+ ![gif](./recursos/Prueba1Ej2_Sprint2.2.gif)
 
-- ❌ Prueba 2: Error en Inicio de Sesión
-Ingresar credenciales incorrectas.
-Verificar que aparece una notificación de error.
-
-
-![gif](./recursos/Prueba2_Login.gif)
-
-- 🆕 Prueba 3: Registro con Validaciones
-Ingresar datos inválidos (correo incorrecto, contraseñas que no coinciden).
-Verificar que se muestran mensajes de error en tiempo real.
-Corregir los datos y completar el registro.
-Verificar notificación de éxito y redirección al login.
+- ✅ Prueba 2: Rankings de popularidad
+Ordenar servicios por popularidad y ubicación.
+Validar que el ranking refleja correctamente las puntuaciones de clientes.
 
 
- ![gif](./recursos/Prueba_Registro.gif)
 
-- 🔐 Prueba 4: Recuperación de Contraseña
-Ingresar un correo registrado.
-Verificar que se envía un aviso de correo de recuperación enviado.
-Probar con un correo no registrado y verificar el mensaje de error.
+![gif](./recursos/Prueba2Ej2_Sprint2.2.gif)
+
+- ✅ Prueba 3: Encuestas de satisfacción
+Completar una encuesta después de una reserva.
+Verificar que la opinión influye en la clasificación del servicio.
 
 
- ![gif](./recursos/Prueba_RecuperarContraseña.gif)
+ ![gif](./recursos/Prueba3Ej2_Sprint2.2.gif)
+
 
 
 
